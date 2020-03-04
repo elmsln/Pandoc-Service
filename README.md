@@ -11,5 +11,11 @@ docker build -t pandoc-service .
 ## Usage
 
 ```bash
+docker run -it --rm -v $(pwd):/src pandoc-service <input-filename>.html -s -o <output-filename>.md
+```
+
+Example:
+
+```bash
 docker run -it --rm -v $(pwd):/src pandoc-service ./tests/pandochtmltest.html -s -o ./tmp/output.md
 ```
