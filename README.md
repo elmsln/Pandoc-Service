@@ -3,7 +3,7 @@
 ## Build the Docker Image
 
 ```bash
-git clone git@github.com:IST-440-Pandoc/Pandoc-Service.git
+git clone git@github.com:elmsln/Pandoc-Service.git
 cd Pandoc-Service
 docker build -t pandoc-service .
 ```
