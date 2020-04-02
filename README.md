@@ -10,15 +10,30 @@ docker build -t pandoc-service .
 
 ## Usage
 
+Linux / Windows PowerShell:
+
 ```bash
 docker run -it --rm -v "$(pwd):/src" pandoc-service <input-filename>.html -s -o <output-filename>.md
 ```
 
-Example:
+Linux / Windows PowerShell Example:
 
 ```bash
 docker run -it --rm -v "$(pwd):/src" pandoc-service ./tests/pandochtmltest.html -s -o ./tmp/output.md
 ```
+
+Windows Command Line:
+
+```bash
+docker run -it --rm -v "%cd%:/src" pandoc-service "<input-filename>.html" -s -o "<output-filename>.md"
+```
+
+Windows Command Line Example:
+
+```bash
+docker run -it --rm -v "%cd%:/src" pandoc-service "./tests/pandochtmltest.html" -s -o "./tmp/output.md"
+```
+
 
 ## FAAS Resources
 
