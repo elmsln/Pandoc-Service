@@ -34,6 +34,11 @@ Windows Command Line Example:
 docker run -it --rm -v "%cd%:/src" pandoc-service "./tests/pandochtmltest.html" -s -o "./tmp/output.md"
 ```
 
+Linux / Windows PowerShell convert and move file location:
+
+```bash
+docker run -it --rm -v "$(pwd):/src" pandoc-service <input-filename>.html -s -o <output-filename>.md | mv <output-filename> <new/file/location>
+```
 
 ## FAAS Resources
 
