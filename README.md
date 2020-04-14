@@ -1,5 +1,8 @@
 # Pandoc Service
 
+The intended purpose of this mircroservice is to serve as a file conversion tool in the command line for both Linux and Windows users.
+DISCLAIMER: Any copyrighted material without permission of the owner should not use this tool. Any material passed through is solely the responsibility of the user.
+
 ## Build the Docker Image
 
 ```bash
